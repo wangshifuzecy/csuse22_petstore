@@ -1,0 +1,82 @@
+###
+
+# curl --location 'localhost:8088/cart'
+#--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo'
+GET localhost:8088/cart
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+
+#{
+#    "status": 0,
+#    "data": [
+#        {
+#            "userId": "j2ee",
+#            "itemId": "EST-18",
+#            "productId": "AV-CB-01",
+#            "listPrice": 193.50,
+#            "number": 1,
+#            "itemAttribute": "Adult Male",
+#            "productName": "Amazon Parrot"
+#        }
+#    ]
+#}
+###
+
+POST localhost:8088/cart
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+Content-Type: application/json
+
+{
+  "itemId": "EST-18",
+  "productId": "AV-CB-01",
+  "listPrice": 193.50,
+  "unitCost": 92.00,
+  "supplierId": 1,
+  "attribute1": "Adult Male",
+  "attribute2": null,
+  "attribute3": null,
+  "attribute4": null,
+  "attribute5": null,
+  "status": "P",
+  "categoryId": "BIRDS",
+  "productName": "Amazon Parrot",
+  "productDescription": "Great companion for up to 75 years",
+  "quantity": 10000
+}
+
+###
+POST localhost:8088/cart/check
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+Content-Type: application/json
+
+{
+  "itemId": "EST-18",
+  "productId": "AV-CB-01",
+  "listPrice": 193.50,
+  "unitCost": 92.00,
+  "supplierId": 1,
+  "attribute1": "Adult Male",
+  "attribute2": null,
+  "attribute3": null,
+  "attribute4": null,
+  "attribute5": null,
+  "status": "P",
+  "categoryId": "BIRDS",
+  "productName": "Amazon Parrot",
+  "productDescription": "Great companion for up to 75 years",
+  "quantity": 10000
+}
+
+###
+POST localhost:8088/cart/update
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+Content-Type: application/json
+
+        {
+            "userId": "j2ee",
+            "itemId": "EST-18",
+            "productId": "AV-CB-01",
+            "listPrice": 193.50,
+            "number": 1,
+            "itemAttribute": "Adult Male",
+            "productName": "Amazon Parrot"
+        }

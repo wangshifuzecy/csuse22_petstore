@@ -1,0 +1,38 @@
+POST localhost:8088/order
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+Content-Type: application/json
+
+{
+  "userId": "j2ee",
+  "orderDate": "2024-04-04T12:30:00",
+  "shipAddr1": "123 Main St",
+  "shipAddr2": "123 matin st",
+  "shipCity": "Los Angeles",
+  "shipState": "CA",
+  "shipZip": "90001",
+  "shipCountry": "USA",
+  "billAddr1": "456 Oak Ave",
+  "billAddr2": "123 oak",
+  "billCity": "San Francisco",
+  "billState": "CA",
+  "billZip": "94101",
+  "billCountry": "USA",
+  "courier": "UPS",
+  "totalPrice": 125.99,
+  "billToFirstName": "John",
+  "billToLastName": "Doe",
+  "shipToFirstName": "Jane",
+  "shipToLastName": "Doe",
+  "creditCard": "1234",
+  "exprDate": "12/26",
+  "cardType": "Visa",
+  "locale": "en_US"
+}
+
+###
+GET localhost:8088/order
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo
+
+###
+POST localhost:8088/cart/reset
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjbGFpbXMiOnsidXNlcm5hbWUiOiJqMmVlIn0sImV4cCI6MTcxMzE2MjM3MX0.IkI0mOJwSlQ0xNcM64YZyqVPhr7v7Vuj55UUi6aQUMo

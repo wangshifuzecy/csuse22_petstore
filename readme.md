@@ -1,0 +1,1 @@
+中南大学22级宠物商店，前后端分离，前端采用vue，后端为springboot和mybatis-plus

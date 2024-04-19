@@ -1,0 +1,18 @@
+###
+GET localhost:8088/catalog/categories
+###
+GET localhost:8088/catalog/categories/CATS
+###
+GET localhost:8088/catalog/categories/CATS/products
+###
+GET localhost:8088/catalog/products/AV-CB-01/items
+###
+GET localhost:8088/catalog/products/FL-DSH-01/items
+###
+POST localhost:8088/catalog/search
+
+amazon parrot
+###
+GET localhost:8088/catalog/products/names
+###
+GET localhost:8088/catalog/items/EST-18

@@ -1,0 +1,12 @@
+#< /home/wsf/code/asset/images/bird2.gif 这里我用的是linux的绝对路径
+# curl --location 'localhost:8088/upload' --form 'file=@"/home/wsf/code/asset/images/bird2.gif"'
+POST localhost:8088/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="dog1.gif"
+
+< /home/wsf/code/asset/images/dog1.gif
+--WebAppBoundary--
+
+###
